@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Carlos Chavarria} \\ \vspace{1pt}
+    \small 999-420-1723 $|$ \href{mailto:cjchavarriamendoza@gmail.com}{\underline{cjchavarriamendoza@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/cjchavarria}{\underline{linkedin.com/in/cjchavarria}} $|$
+    \href{https://github.com/cj-chavarria}{\underline{github.com/cj-chavarria}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Autónoma de Yucatán}{Mérida, Yucatán, MX}
+      {Bachelor of Science in Engineering Physics}{Aug. 2021 -- May 2026}
+      \resumeItemListStart
+      \resumeItem{Relevant Coursework:}
+        \begin{itemize}
+            \item Numerical Methods, Probability and Statistics.
+            \item Electives: Machine Learning, Data Science, Deep Learning for Computer Vision, Modern Cloud Engineering.
+        \end{itemize}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Automation Engineer}{January 2026 -- Present}
+      {WAYAKNA S.A. de C.V.}{Mérida, Yucatán, MX}
+      \resumeItemListStart
+        \resumeItem{Design an ETL pipeline for a data migration process to a CRM software using Snowflake, Apache Airflow, and dbt}
+        \resumeItem{Develop an API wrapper for various official government business registry APIs from different countries, in order to facilitate data enrichment and validation for a data processing system.}
+        \resumeItem{Develop an invoice processing tool for text extraction using OCR libraries in Python to be integrated into an information validation process.}
+        \resumeItem{Developed a web scraping script as part of a process to generate information (emails, phone numbers, etc.) on potential customers for the sales team, which successfully yielded more than 5,000 new leads from various sources.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Quality Assurance Specialist}{February 2025 -- January 2026}
+    {Scale AI}{Remote}
+        \resumeItemListStart
+          \resumeItem{Specializing in ensuring the quality and accuracy of AI models through rigorous validation and control processes. My work involves data review, performance analysis, and quality testing}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL (Postgres)} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, Jupyter/Marimo Notebooks.} \\
+     \textbf{Libraries}{: polars, pandas, NumPy, Matplotlib, seaborn, scikit-learn, OpenCV, Pydantic, Apache Airflow, Prefect.}
+    }}
+ \end{itemize}
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Merida Coffee Shops Analysis —  Personal Project} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a data ingestion pipeline in Python utilizing the Google Places API and geospatial grids to systematically collect information from all coffee shop places in the city.}
+            \resumeItem{Performed data cleaning and anomaly detection to analyze business patterns based on location, pricing, and ratings.}
+            \resumeItem{Developed interactive geospatial visualizations using Folium to map business density and performance metrics.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Air Quality Analysis — Research Project} $|$ \emph{Python}}{January 2025 -- August 2025}
+          \resumeItem{Project: “Medición de la contaminación ambiental al interior de viviendas donde se cocina con leña y carbón en Pixyá, Yucatán”}
+          \resumeItemListStart
+            \resumeItem{Developed Python scripts for automated data preprocessing, outlier detection, and time-series analysis of environmental pollution metrics using pandas and Matplotlib.}
+            \resumeItem{Generated and presented statistical reports for the research team to facilitate data-driven insights into environmental dynamics.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+\end{document}
